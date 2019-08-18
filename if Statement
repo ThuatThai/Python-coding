@@ -1,0 +1,41 @@
+# This is an Template for if..else statement
+# Enjoy it
+# Created by Thuat Thai
+is_thuat = True
+if (is_thuat):
+    print("You are Thuat from VN")
+is_thuat = False
+if (is_thuat== True):
+    print("You are  Thuat from TL")
+else:
+    print("YOU ARE SOMEONE ELSE")
+is_dog = 1
+
+#if,elif và else cùng nằm trên một hàng vì vai vế nó ngang nhau
+if(is_dog== 2):
+    print("Nha Thuật cũng nuôi 2 con chó")
+
+elif (is_dog == 1):
+    print("Có gia đình chỉ có 1 con Pet và họ rất cưng chiều chúng")
+else:
+     print("CO NHA NUOI NHIEU CHO, CO NHA KHONG NUOI CHO")
+     print("-------------------------------------------------")
+
+is_girl= True
+is_beautiful = False
+# if we meet a beautiful Girl , we'll invite her go to coffee shop
+# if she is not a girl or she is a girl but she isn't beautiful, we will get out.....!!!!!!!!(Đểu thật)
+
+
+if is_girl and is_beautiful:
+    print("You should invite her go to coffee shop"+ "\n-------------------------------------------------")
+elif not(is_girl) or not(is_beautiful):
+    print(" come out the way without thinking")
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+# build a Guesing game
+
+
+# 1.Firstly, you have to create a word, called " Secrec_word">>This word is used for guessing of player
+# 2. You have define a variable to determine  how many time for answering of user? (create a variable called " count_intput")
+# 3. Create a variable to receive the value from player (called "guessing_word")
+# 4. Create a boolean variable : out_of_loop =false;
+# 5. Create a function to solve problem:
+#5.1 Create a while loop with condition: if (out_of_loop =false  && count_limit <= 3(for example) > while loop  working!!
+#5.2 The contend of while loop:
+#5.2.1 guesing_word = the value from player 
+#5.2.2 compare (guesing_word != secrec_word)
+#5.5 count_input  +=1
+#5.5 Else : while loop stop working and we assign : out_of_loop = True
+# 6. if (guessing_word = secrec_word)>> print("WIN")
+# 7. Else : print ("LOSE")
+
+# 8. NOTE for fun : YOU SHOULD GIVE SOME WORDS TO PLAYER TYPE OUT THEIR WORD
+
+# AND THIS IS CODE
+
+
+
+# Để ý từ từ 'protestion' trong ngoặc kép chỉ có một mình nó, không có khoảng trống nào hết
+Secrec_word = "protestation"
+Guessing_word = ""
+out_of_loop =False
+count_time = 0
+
+
+
+# Điều kiện hàm while bên dưới: Ban đầu còn lặp trong hàm và số lần đếm nhỏ hơn 3
+while not(out_of_loop)and count_time <3:
+ # ĐẦU TIÊN LÀ   CẦU NGƯỜI CHƠI NHẬP TỪ
+   Guessing_word = input(" Please enter a word, this word mention an event that is attracting people in the world:   ")
+ # SAU ĐÓ THỰC HIỆN TIẾP CÔNG VIỆC...
+ #CÔNG VIỆC VẪN Ở TRONG HÀM WHILE
+ #VÀ TA GIAO VIỆC CHO NÓ(TỨC CHO HÀM WHILE) LÀ VIỆC ĐI SO SÁNH------TỨC HÀM WHILE SỮ DỤNG HÀM if
+ # Hàm while là CHA của hàm if
+   if Guessing_word != Secrec_word :
+       # SO SÁNH TỪ NHẬP MÀ KHÁC TỪ BÍ MẬT THÌ TĂNG SỐ LẦN ĐẾM LÊN
+       count_time+=1
+       # NẾU KHÔNG THỎA ĐIỀU KIỆN(TỨC LÀ TỪ NHẬP ĐÃ GIỐNG TỪ BÍ MẬT) THÌ THỰC HIỆN TIẾP
+       #GÁN BIẾN ĐỂ HÀM WHILE THỎA ĐIỀU KIỆN KẾT THÚC VÒNG LẶP VÀ NHÃY RA NGOÀI
+   else:
+       out_of_loop=True
+
+
+     
+# Để ý hàng lối câu lệnh dưới: if phải ở sát lề vì nó ngang hàng với hàm while chứ không phải nằm trong hàm while
+if Guessing_word == Secrec_word :
+     print(" You WIN-----CONGRATULATION ")
+else:
+     print(" You lose ")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

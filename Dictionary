@@ -1,0 +1,21 @@
+# This program convert the nickname of a person to his or her full name
+nameConvertsion ={
+"Antonio": "Thái Hồ Thuật",
+"Tony"   : "Võ Trần Tài",
+"Robert" : "Dương Đức Tuấn",
+"Trumso" : "Trần Như Hiếu",
+"Michel" : "Lê Văn Hùng",
+"Freddy" : "Trần Quang Phúc"
+}
+print(nameConvertsion["Antonio"])
+print(nameConvertsion.get("Tony"))
+print(nameConvertsion.get("THT"))
+print(nameConvertsion.get("NND","Haven't got that nickname"))
+
+
+
+
+
+
+
+
